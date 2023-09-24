@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * _add - a function that adds an element to stack
  * @doubly: the pointer to the head ofa doubly linked list

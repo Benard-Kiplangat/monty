@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * add_dnodeint - a function that adds new node at begininning of a doubly,

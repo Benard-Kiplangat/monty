@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * freer - a function that frees

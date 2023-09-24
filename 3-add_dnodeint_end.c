@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * add_dnodeint_end - a function that adds a node at the end of a dbly list
