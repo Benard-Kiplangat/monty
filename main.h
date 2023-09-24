@@ -87,6 +87,8 @@ void _pall(stack_t **doubly, unsigned int cline);
 void _pint(stack_t **doubly, unsigned int cline);
 void _pop(stack_t **doubly, unsigned int cline);
 void _swap(stack_t **doubly, unsigned int cline);
+void _nop(stack_t **doubly, unsigned int cline);
+void _add(stack_t **doubly, unsigned int cline);
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 stack_t *add_dnodeint_end(stack_t **head, const int n);
 stack_t *add_dnodeint(stack_t **head, const int n);
