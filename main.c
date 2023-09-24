@@ -8,7 +8,9 @@
  *
  * Return: 0 on success or -1 on error
  */
+
 global_t vg;
+
 int main(int argc, char **argv)
 {
 	void (*f)(stack_t **stack, unsigned int line_number);

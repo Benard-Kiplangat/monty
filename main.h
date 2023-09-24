@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <ctype.h>
+
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -22,6 +23,7 @@ typedef struct dlistint_s
 	struct dlistint_s *prev;
 	struct dlistint_s *next;
 } dlistint_t;
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -33,12 +35,14 @@ typedef struct dlistint_s
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
+
 int main(int argc, char **argv);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+
 /**
  * struct globals - the structure of global variables
  * @lifo: todetermine if a structure is a stack or queue
@@ -49,6 +53,7 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream);
  * @buffer: the text read from the file
  * Description: a node structure for the lnked list
  */
+
 typedef struct globals
 {
 	int lifo;
@@ -58,7 +63,9 @@ typedef struct globals
 	FILE *fd;
 	char *buffer;
 } global_t;
+
 extern global_t vg;
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -67,11 +74,13 @@ extern global_t vg;
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
+
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 void freer(void);
 void _push(stack_t **doubly, unsigned int cline);
 void _pall(stack_t **doubly, unsigned int cline);

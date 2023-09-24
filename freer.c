@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * free - a function that frees
+ * freer - a function that frees
  * Return: nothing
  */
 
