@@ -20,8 +20,6 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number)
 		{"nop", _nop},
 		{NULL, NULL}
 	};
-
-	printf("opc %s\n", opc);
 	while (instruction[i].opcode)
 	{
 		if (strcmp(instruction[i].opcode, opc) == 0)

@@ -15,7 +15,7 @@ void _add(stack_t **doubly, unsigned int cline)
 		;
 	if (k < 2)
 	{
-		fprintf(stderr, "L%u: Can't add, stack too short\n", cline);
+		fprintf(stderr, "L%u: can't add, stack too short\n", cline);
 		freer();
 		exit(EXIT_FAILURE);
 	}
@@ -74,7 +74,7 @@ void _swap(stack_t **doubly, unsigned int cline)
 		;
 	if (m < 2)
 	{
-		fprintf(stderr, "L%u: Can't swap, stack too short\n", cline);
+		fprintf(stderr, "L%u: can't swap, stack too short\n", cline);
 		freer();
 		exit(EXIT_FAILURE);
 	}

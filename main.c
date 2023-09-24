@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	vg.buffer = NULL;
 	if (argc == 1 || argc > 2)
 	{
-		fprintf(stderr, "Usage: monty file\n");
+		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	fd = fopen(argv[1], "r");
