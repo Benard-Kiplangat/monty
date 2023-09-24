@@ -1,5 +1,28 @@
 #include "main.h"
+/**
+ * _add - a function that adds an element to stack
+ * @doubly: the pointer to the head ofa doubly linked list
+ * @cline: dthe line number
+ * Return: nothing
+ */
+void _add(stack_t **doubly, unsigned int cline)
+{
+	int k = 0;
+	stack_t *aux = NULL;
 
+	aux = *doubly;
+	for (; aux != NULL; aux = aux->next, k++)
+		;
+	if (k < 2)
+	{
+		fprintf(stderr, "L%u: Can't add, stack too short\n", cline);
+		freer();
+		exit(EXIT_FAILURE);
+	}
+	aux = (*doubly)->next;
+	aux->n += (*doubly)->n;
+	_pop(doubly, cline);
+}
 /**
  * _push - a function that pushes an element to stack
  * @doubly: the pointer to the head ofa doubly linked list
